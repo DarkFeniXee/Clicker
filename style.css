@@ -1,0 +1,25 @@
+body {
+    background: #bbc4fd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+.cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: default;
+}
+#btn {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: solid 10px black;
+    font-size: 20px;
+}
+#count {
+    margin: 20px;
+    font-size: 40px;
+}
