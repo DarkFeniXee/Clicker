@@ -1,9 +1,20 @@
-body {
-    background: #bbc4fd;
+html {
+    background: linear-gradient(#5680E9, #5AB9EA );
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0%;
     padding: 0%;
     text-align: center;
+    user-select: none;
+    background-size: cover;
+    height: 100%;
+    animation: come 2s forwards;
+}
+@keyframes come {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+body {
+    margin: 0px;
 }
 .cont {
     position: absolute;
@@ -12,14 +23,93 @@ body {
     transform: translate(-50%, -50%);
     cursor: default;
 }
-#btn {
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    border: solid 10px black;
+.none {
+    display: none;
+}
+#upmenu, #shopmenu {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 80%;
+    height: 35%;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-bottom-left-radius: 20px;
+    background: linear-gradient(#255fff, #62b3ff);
+    box-shadow: 0px 0px 20px black;
+    overflow: hidden;
+}
+@media screen and (max-width: 580px) {
+    #upmenu, #shopmenu {
+        width: 65%;
+        overflow-y: scroll;
+    }
+}
+#shopmenu {
+    font-size: 40px;
+    line-height: 250px;
+}
+#upbtn, #upx {
+    position: relative;
+    display: inline-flex;
+    margin: 1%;
+    min-width: 200px;
+    width: 45%;
+    height: 85%;
+    border-radius: 20px;
+    top: 5%;
+    border: solid 3px black;
+    background: #025eaf;
+    box-shadow: 0px 0px 20px black;
     font-size: 20px;
+}
+.menu {
+    border: solid 2px black;
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 5px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    background: #5AB9EA;
+    box-shadow: 0px 0px 10px black;
+    font-size: 20px;
+}
+.menu:hover {
+    filter: brightness(90%);
+}
+.menu:active {
+    filter: brightness(80%);
+}
+#btn {
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    border: solid 3px black;
+    font-size: 30px;
+    background: #84CEEB;
+    box-shadow: 0px 10px 20px black;
+    line-height: 100px;
+}
+#btn:hover {
+    filter: brightness(90%);
+}
+#btn:active {
+    filter: brightness(80%);
 }
 #count {
     margin: 20px;
     font-size: 40px;
+}
+#musicbtn {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 50px;    
+}
+#musicbtn:hover {
+    filter: opacity(90%);
+}
+#musicbtn:active {
+    filter: opacity(80%);
 }
